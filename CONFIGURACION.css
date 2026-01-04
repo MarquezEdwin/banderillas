@@ -1,0 +1,365 @@
+/* ===== CONFIGURACIÓN RÁPIDA ===== */
+
+/* 
+    INSTRUCCIONES RÁPIDAS PARA PERSONALIZAR LA PÁGINA
+    
+    Solo necesitas cambiar los valores de las variables en la sección :root
+    Todo lo demás se ajustará automáticamente
+*/
+
+:root {
+    /* ===== COLORES PRINCIPALES ===== */
+    /* Estos son los colores del logo actual */
+    --primary-yellow: #FFD700;      /* Color amarillo del logo */
+    --primary-red: #E63946;         /* Color rojo del logo */
+    --primary-black: #1A1A1A;       /* Color negro del logo */
+    --primary-cream: #F7F3E9;       /* Color crema/blanco */
+    --accent-orange: #FF8C42;       /* Color naranja complementario */
+
+    /* 
+        PALETAS DE COLORES ALTERNATIVAS:
+        
+        OPCIÓN 1 - Tropical:
+        --primary-yellow: #FFC300;
+        --primary-red: #FF5733;
+        --primary-black: #1A1A1A;
+        --primary-cream: #F0E4D7;
+        --accent-orange: #FF8C42;
+        
+        OPCIÓN 2 - Natural:
+        --primary-yellow: #D4AF37;
+        --primary-red: #8B4513;
+        --primary-black: #2F1B0C;
+        --primary-cream: #F5DEB3;
+        --accent-orange: #CD7F32;
+        
+        OPCIÓN 3 - Moderno:
+        --primary-yellow: #FFD700;
+        --primary-red: #DC2626;
+        --primary-black: #111827;
+        --primary-cream: #F3F4F6;
+        --accent-orange: #F59E0B;
+        
+        OPCIÓN 4 - Vibrante:
+        --primary-yellow: #FDE047;
+        --primary-red: #EF4444;
+        --primary-black: #1E293B;
+        --primary-cream: #F8FAFC;
+        --accent-orange: #FB923C;
+    */
+
+    /* ===== COLORES DE TEXTO ===== */
+    --text-dark: #2C2C2C;           /* Color del texto oscuro */
+    --text-light: #666666;          /* Color del texto claro */
+
+    /* ===== SOMBRAS ===== */
+    --shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    --shadow-lg: 0 20px 50px rgba(0, 0, 0, 0.25);
+
+    /* 
+        INFORMACIÓN PARA PERSONALIZAR EN HTML:
+        
+        1. NOMBRE DEL NEGOCIO:
+           Busca: "LULOS" y reemplaza con tu nombre
+           
+        2. DESCRIPCIÓN:
+           Busca: "El mejor sabor hecho banderilla" y personaliza
+           
+        3. REDES SOCIALES:
+           Busca: "@banderillaslulos" en Instagram
+           Reemplaza con: "@tu_usuario"
+           
+        4. EMAIL:
+           Busca: "info@lulosbanderillas.com"
+           Reemplaza con: "tu_email@ejemplo.com"
+           
+        5. MENÚ DE PRODUCTOS:
+           Edita las tarjetas en la sección #menu
+           
+        6. LOGO:
+           Asegúrate que logo.jpg esté en la misma carpeta
+           O reemplaza el nombre si tienes otro archivo
+    */
+}
+
+/* ===== CONFIGURACIÓN DE FUENTES ===== */
+
+/* 
+    Las fuentes actuales son Poppins y Fredoka desde Google Fonts
+    
+    Si quieres cambiar de fuentes, reemplaza en index.html:
+    
+    <link href="https://fonts.googleapis.com/css2?family=NUEVA_FUENTE:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    
+    Luego aquí abajo:
+    
+    body {
+        font-family: 'NUEVA_FUENTE', sans-serif;
+    }
+    
+    Fuentes recomendadas:
+    - Montserrat (moderna)
+    - Inter (limpia)
+    - Raleway (elegante)
+    - Quicksand (amigable)
+    - Playfair Display (serif elegante)
+*/
+
+/* ===== ESPACIADO GLOBAL ===== */
+
+html {
+    /* Cambiar scroll-behavior si no quieres scroll suave */
+    scroll-behavior: smooth;
+}
+
+/* ===== AJUSTES DE ANIMACIÓN ===== */
+
+/* Si las animaciones son muy rápidas o lenta, ajusta aquí:
+
+    Ejemplos en el código:
+    - animation: slideDown 0.5s ease-out;  <- Cambiar 0.5s
+    - animation: bounce 2s infinite;       <- Cambiar 2s
+    - animation: float 6s infinite;        <- Cambiar 6s
+    
+    Tiempos recomendados:
+    - Rápido: 0.3s
+    - Normal: 0.5s - 0.8s
+    - Lento: 1s - 2s
+    - Muy lento: 3s+
+*/
+
+/* ===== AJUSTES DE SOMBRAS ===== */
+
+/* 
+    Si las sombras son muy pronunciadas, reduce la opacidad:
+    
+    rgba(0, 0, 0, 0.15) -> rgba(0, 0, 0, 0.08)  (más ligero)
+    rgba(0, 0, 0, 0.25) -> rgba(0, 0, 0, 0.15)  (más ligero)
+    
+    Si quieres sombras más fuertes:
+    
+    rgba(0, 0, 0, 0.15) -> rgba(0, 0, 0, 0.25)  (más fuerte)
+    rgba(0, 0, 0, 0.25) -> rgba(0, 0, 0, 0.4)   (más fuerte)
+*/
+
+/* ===== AJUSTES DE BORDER RADIUS ===== */
+
+/*
+    Los bordes redondeados están en:
+    - border-radius: 50px;    (muy redondeado - botones)
+    - border-radius: 15px;    (redondeado normal - tarjetas)
+    - border-radius: 10px;    (poco redondeado - elementos)
+    
+    Si quieres más cuadrado:
+    - Cambia 50px a 20px (botones menos redondeados)
+    - Cambia 15px a 5px (tarjetas menos redondeadas)
+    
+    Si quieres más redondeado:
+    - Cambia 15px a 25px (tarjetas más redondeadas)
+*/
+
+/* ===== AJUSTES DE HOVER ===== */
+
+/*
+    Los efectos de hover están configurados con:
+    - transform: translateY(-10px);  (levanta el elemento)
+    - transform: scale(1.05);        (agranda el elemento)
+    - box-shadow: cambios;           (sombra dinámica)
+    
+    Si quieres efectos más sutiles:
+    - Cambia translateY(-10px) a translateY(-5px)
+    - Cambia scale(1.05) a scale(1.02)
+    
+    Si quieres efectos más pronunciados:
+    - Cambia translateY(-10px) a translateY(-15px)
+    - Cambia scale(1.05) a scale(1.1)
+*/
+
+/* ===== BREAKPOINTS RESPONSIVE ===== */
+
+/*
+    Los puntos de quiebre están en:
+    - 768px (tablets)
+    - 480px (teléfonos pequeños)
+    
+    Si necesitas ajustar para dispositivos específicos:
+    
+    @media (max-width: 900px) {
+        /* Estilos para pantallas < 900px * /
+    }
+    
+    Breakpoints estándar:
+    - 320px: teléfono muy pequeño
+    - 480px: teléfono normal
+    - 768px: tablet
+    - 1024px: laptop pequeña
+    - 1280px: laptop normal
+    - 1920px: desktop
+*/
+
+/* ===== AJUSTES DE GRID ===== */
+
+/*
+    Los grids están configurados con:
+    - grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    
+    Si quieres menos elementos por fila:
+    - Cambia 320px a 400px (menos elementos por fila)
+    
+    Si quieres más elementos por fila:
+    - Cambia 320px a 250px (más elementos por fila)
+    
+    O especifica número exacto:
+    - grid-template-columns: repeat(3, 1fr); (siempre 3 columnas)
+*/
+
+/* ===== AJUSTES DE PADDING Y MARGIN ===== */
+
+/*
+    Los espacios están en px o rem (1rem = 16px)
+    
+    Aumentar espacio global:
+    - Cambia: padding: 6rem 2rem;
+    - A: padding: 8rem 2rem; (más arriba/abajo)
+    
+    Reducir espacio:
+    - Cambia: padding: 6rem 2rem;
+    - A: padding: 4rem 2rem; (menos arriba/abajo)
+*/
+
+/* ===== AJUSTES DE GRADIENTES ===== */
+
+/*
+    Los gradientes están en varios elementos:
+    
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--primary-yellow) 100%);
+    
+    Cambiar dirección:
+    - 135deg -> 45deg (diagonal opuesta)
+    - 135deg -> 90deg (vertical)
+    - 135deg -> 0deg (horizontal)
+    
+    Agregar más colores:
+    linear-gradient(135deg, color1 0%, color2 50%, color3 100%);
+*/
+
+/* ===== AJUSTES DE TIPOGRAFÍA ===== */
+
+/*
+    Tamaños de fuente:
+    
+    h1 { font-size: 3.5rem; }     <- Títulos grandes
+    h2 { font-size: 2rem; }       <- Títulos secciones
+    h3 { font-size: 1.5rem; }     <- Subtítulos
+    p { font-size: 1rem; }        <- Texto normal
+    
+    Si el texto es muy grande:
+    - h1: 3.5rem -> 2.5rem
+    - h2: 2rem -> 1.5rem
+    
+    Si el texto es muy pequeño:
+    - h1: 3.5rem -> 4rem
+    - h2: 2rem -> 2.5rem
+    
+    Peso de fuente:
+    - font-weight: 300; (ligero)
+    - font-weight: 400; (normal)
+    - font-weight: 600; (semi-bold)
+    - font-weight: 700; (bold)
+    - font-weight: 800; (extra-bold)
+*/
+
+/* ===== MODO OSCURO ===== */
+
+/*
+    Para agregar soporte a modo oscuro, agrega:
+    
+    @media (prefers-color-scheme: dark) {
+        :root {
+            --primary-cream: #1a1a1a;
+            --text-dark: #f5f5f5;
+            --text-light: #b0b0b0;
+            /* ... más cambios */
+        }
+    }
+*/
+
+/* ===== IMPRESIÓN ===== */
+
+/*
+    Si alguien imprime la página, esto ocultará navegación:
+    
+    @media print {
+        .navbar, .footer, .hamburger {
+            display: none;
+        }
+        
+        body {
+            background: white;
+            color: black;
+        }
+    }
+*/
+
+/* ===== GUÍA DE COLORES HEX ===== */
+
+/*
+    Colores seguros para web:
+    
+    Rojos:
+    - #FF0000 (rojo puro)
+    - #E63946 (nuestro rojo)
+    - #DC2626 (rojo oscuro)
+    - #FB7185 (rosa rojo)
+    
+    Amarillos:
+    - #FFD700 (nuestro amarillo)
+    - #FFC300 (amarillo dorado)
+    - #FDE047 (amarillo claro)
+    - #FBBF24 (amarillo dorado)
+    
+    Naranjas:
+    - #FF8C42 (nuestro naranja)
+    - #FB923C (naranja claro)
+    - #F97316 (naranja fuerte)
+    - #FF6B35 (naranja vibrante)
+    
+    Negros/Grises:
+    - #1A1A1A (nuestro negro)
+    - #111827 (negro muy oscuro)
+    - #374151 (gris oscuro)
+    - #9CA3AF (gris claro)
+    
+    Cremas/Blancos:
+    - #F7F3E9 (nuestro crema)
+    - #F3F4F6 (blanco/gris muy claro)
+    - #FFFFFF (blanco puro)
+    - #F5F5F5 (blanco roto)
+*/
+
+/* ===== RECURSOS ÚTILES ===== */
+
+/*
+    Generadores de color:
+    - colormind.io
+    - coolors.co
+    - paletton.com
+    
+    Verificadores de contraste:
+    - webaim.org/resources/contrastchecker
+    - contrastchecker.com
+    
+    Herramientas de animación:
+    - animista.net
+    - keyframes.app
+    
+    Optimizadores de imagen:
+    - tinypng.com
+    - imageoptim.com
+    - squoosh.app
+    
+    Testing de velocidad:
+    - pagespeed.web.dev
+    - gtmetrix.com
+    - webpagetest.org
+*/

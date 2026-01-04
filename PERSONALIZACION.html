@@ -1,0 +1,416 @@
+<!-- ===== EJEMPLOS DE PERSONALIZACIÓN ===== -->
+
+<!-- 1. AGREGAR COLORES PERSONALIZADOS -->
+
+<!-- Si quieres cambiar los colores a tu gusto, modifica las variables CSS en styles.css:
+
+:root {
+    --primary-yellow: #FFD700;      /* Cambiar amarillo */
+    --primary-red: #E63946;         /* Cambiar rojo */
+    --primary-black: #1A1A1A;       /* Cambiar negro */
+    --primary-cream: #F7F3E9;       /* Cambiar crema */
+    --accent-orange: #FF8C42;       /* Cambiar naranja */
+}
+
+Ejemplos de paletas:
+- Caliente: #FF6B6B (rojo) + #FFE66D (amarillo) + #1A202C (negro)
+- Tropical: #FF6B35 (rojo) + #FFC300 (amarillo) + #004E89 (azul)
+- Natural: #D4A574 (marrón) + #E8C4A0 (crema) + #3E2723 (marrón oscuro)
+-->
+
+<!-- 2. CAMBIAR FAVICON -->
+
+<!-- Agrega esto en <head> de index.html:
+
+<link rel="icon" type="image/jpg" href="logo.jpg">
+
+O crea favicon.ico y usa:
+
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+-->
+
+<!-- 3. AGREGAR GOOGLE FONTS PERSONALIZADAS -->
+
+<!-- En lugar de Poppins y Fredoka, puedes usar:
+
+Modernas:
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+
+Elegantes:
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+
+Amigables:
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+
+Luego cambia en styles.css:
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+-->
+
+<!-- 4. AGREGAR CAROUSEL DE IMÁGENES -->
+
+<!--
+Crea una sección adicional en index.html:
+
+<section class="carousel">
+    <h2>Galería de Productos</h2>
+    <div class="carousel-container">
+        <img src="banderilla1.jpg" alt="Banderilla 1">
+        <img src="banderilla2.jpg" alt="Banderilla 2">
+        <img src="banderilla3.jpg" alt="Banderilla 3">
+    </div>
+</section>
+
+Y agrega CSS en styles.css:
+
+.carousel {
+    padding: 6rem 2rem;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.carousel-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.carousel-container img {
+    width: 100%;
+    border-radius: 15px;
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.3s ease;
+}
+
+.carousel-container img:hover {
+    transform: scale(1.05);
+}
+-->
+
+<!-- 5. AGREGAR TESTIMONIOS -->
+
+<!--
+<section class="testimonials">
+    <h2 class="section-title">Lo que dicen nuestros clientes</h2>
+    
+    <div class="testimonials-grid">
+        <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Las mejores banderillas que he probado. ¡Absolutamente delicioso!"</p>
+            <p class="author">- María González</p>
+        </div>
+        
+        <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Servicio rápido, productos frescos y sabores increíbles."</p>
+            <p class="author">- Juan Rodríguez</p>
+        </div>
+        
+        <div class="testimonial-card">
+            <div class="stars">⭐⭐⭐⭐⭐</div>
+            <p>"Los snacks son perfectos para llevar a cualquier evento."</p>
+            <p class="author">- Ana Martínez</p>
+        </div>
+    </div>
+</section>
+
+CSS:
+
+.testimonials {
+    padding: 6rem 2rem;
+    background: linear-gradient(135deg, #fff9e6 0%, #ffe8b6 100%);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.testimonial-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    border-left: 4px solid var(--primary-yellow);
+    transition: all 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.stars {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+}
+
+.author {
+    font-weight: 600;
+    color: var(--primary-red);
+    margin-top: 1rem;
+}
+-->
+
+<!-- 6. AGREGAR MAPA DE UBICACIÓN -->
+
+<!--
+<section class="ubicacion">
+    <h2 class="section-title">Encuéntranos</h2>
+    
+    <iframe src="https://www.google.com/maps/embed?pb=..." 
+            width="100%" height="450" style="border:0; border-radius:10px; max-width: 1200px; margin: 3rem auto; display: block;" 
+            allowfullscreen="" loading="lazy">
+    </iframe>
+</section>
+
+Para obtener el código del mapa:
+1. Ve a Google Maps
+2. Busca tu ubicación
+3. Haz clic en "Compartir"
+4. Copia el código de inserción
+-->
+
+<!-- 7. AGREGAR VIDEO DE YOUTUBE -->
+
+<!--
+<section class="video-section">
+    <h2 class="section-title">¿Cómo hacemos nuestras banderillas?</h2>
+    
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VIDEO_ID" 
+                title="YouTube video player" frameborder="0" 
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                allowfullscreen></iframe>
+    </div>
+</section>
+
+CSS:
+
+.video-container {
+    max-width: 800px;
+    margin: 3rem auto;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: var(--shadow-lg);
+}
+
+.video-container iframe {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+}
+-->
+
+<!-- 8. AGREGAR PROMOCIÓN ESPECIAL -->
+
+<!--
+<section class="promo-banner">
+    <div class="promo-content">
+        <h2>🎉 Oferta Especial 🎉</h2>
+        <p>Compra 2 Mix de Banderillas y lleva 1 gratis</p>
+        <button class="btn btn-primary">¡Aprovecha Ahora!</button>
+        <p class="promo-timer">Oferta válida hasta: <span id="countdown">00:00:00</span></p>
+    </div>
+</section>
+
+CSS:
+
+.promo-banner {
+    background: linear-gradient(135deg, var(--primary-red) 0%, var(--accent-orange) 100%);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    margin: 3rem 0;
+    border-radius: 15px;
+    box-shadow: var(--shadow-lg);
+}
+
+.promo-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    animation: bounce 2s infinite;
+}
+
+.promo-timer {
+    margin-top: 1rem;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+JavaScript:
+
+function startCountdown() {
+    const countdownDate = new Date("2024-01-15").getTime();
+    const x = setInterval(function() {
+        const now = new Date().getTime();
+        const distance = countdownDate - now;
+        
+        const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        
+        document.getElementById("countdown").innerHTML = 
+            hours + ":" + minutes + ":" + seconds;
+        
+        if (distance < 0) {
+            clearInterval(x);
+            document.getElementById("countdown").innerHTML = "¡EXPIRADA!";
+        }
+    }, 1000);
+}
+
+startCountdown();
+-->
+
+<!-- 9. AGREGAR FORMULARIO DE CONTACTO FUNCIONAL -->
+
+<!--
+<section class="contacto-avanzado">
+    <h2>Contáctanos</h2>
+    <form class="contact-form" action="https://formspree.io/f/TU_ID" method="POST">
+        <input type="text" name="nombre" placeholder="Tu nombre" required>
+        <input type="email" name="email" placeholder="Tu email" required>
+        <textarea name="mensaje" placeholder="Tu mensaje" rows="5" required></textarea>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+    </form>
+</section>
+
+Para obtener ID de Formspree:
+1. Ve a https://formspree.io
+2. Crea una cuenta
+3. Crea un nuevo formulario
+4. Copia el ID
+-->
+
+<!-- 10. AGREGAR SECCIÓN DE FAQ -->
+
+<!--
+<section class="faq">
+    <h2 class="section-title">Preguntas Frecuentes</h2>
+    
+    <div class="faq-container">
+        <div class="faq-item">
+            <button class="faq-button">¿Cuáles son los ingredientes? ▼</button>
+            <div class="faq-content">
+                <p>Utilizamos ingredientes naturales y frescos: jamón, queso, verduras, 
+                   camarones y especias seleccionadas.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <button class="faq-button">¿Hacen entregas a domicilio? ▼</button>
+            <div class="faq-content">
+                <p>Sí, hacemos entregas en tu zona. Contáctanos por Instagram o WhatsApp.</p>
+            </div>
+        </div>
+        
+        <div class="faq-item">
+            <button class="faq-button">¿Aceptan pedidos grandes? ▼</button>
+            <div class="faq-content">
+                <p>¡Claro! Somos perfectos para eventos. Consulta nuestros paquetes especiales.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+CSS:
+
+.faq {
+    padding: 6rem 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3rem;
+}
+
+.faq-item {
+    border: 2px solid var(--primary-yellow);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.faq-button {
+    width: 100%;
+    padding: 1.5rem;
+    background: linear-gradient(135deg, var(--primary-cream), white);
+    border: none;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.3s ease;
+}
+
+.faq-button:hover {
+    background: linear-gradient(135deg, var(--primary-yellow), var(--primary-cream));
+}
+
+.faq-content {
+    display: none;
+    padding: 1.5rem;
+    color: var(--text-light);
+    line-height: 1.6;
+    border-top: 2px solid var(--primary-yellow);
+}
+
+.faq-content.active {
+    display: block;
+}
+
+JavaScript:
+
+document.querySelectorAll('.faq-button').forEach(button => {
+    button.addEventListener('click', function() {
+        const content = this.nextElementSibling;
+        const allContents = document.querySelectorAll('.faq-content');
+        
+        allContents.forEach(item => {
+            if (item !== content) item.classList.remove('active');
+        });
+        
+        content.classList.toggle('active');
+    });
+});
+-->
+
+<!-- TIPS ADICIONALES -->
+
+<!-- 1. Agregar icono de llamada flotante
+2. Agregar chat en vivo (Tawk.to, Drift)
+3. Agregar contador de visitas
+4. Agregar análisis de comportamiento (Hotjar)
+5. Agregar pop-up de bienvenida
+6. Agregar cupones digitales
+7. Agregar galería interactiva
+8. Agregar sistema de reseñas
+9. Agregar blog de recetas
+10. Agregar tienda online
+-->
+
+<!--
+MEJORES PRÁCTICAS:
+
+1. Mantén la página rápida (< 3 segundos)
+2. Usa imágenes optimizadas (WebP)
+3. Prueba en dispositivos reales
+4. Ten copias de seguridad regulares
+5. Actualiza contenido regularmente
+6. Responde comentarios en redes
+7. Analiza métricas frecuentemente
+8. Mantén el sitio seguro (HTTPS)
+9. Usa palabras clave en títulos
+10. Prueba formularios antes de publicar
+-->
